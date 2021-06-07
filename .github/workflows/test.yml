@@ -9,8 +9,8 @@ jobs:
       with:
         node-version: '14'
     - uses: actions/cache@v2
-      key: ${{ hashFiles('yarn.lock') }}
       with:
+        key: ${{ hashFiles('yarn.lock') }}
         path: node_modules
     - run: yarn install
     - run: yarn test
