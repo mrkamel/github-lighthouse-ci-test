@@ -1,0 +1,16 @@
+on: push
+name: test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - uses: actions/cache@v2
+      with:
+        key: ${{ hashFiles('yarn.lock') }}
+        path: node_modules
+    - run: yarn install
+    - run: yarn test
