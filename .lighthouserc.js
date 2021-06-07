@@ -1,5 +1,10 @@
 module.exports = {
   ci: {
+    assert: {
+      assertions: {
+        'first-contentful-paint': ['error', { minScore: 0.6 }],
+      },
+    },
     collect: {
       url: 'http://localhost:3000/',
       numberOfRuns: 1,
