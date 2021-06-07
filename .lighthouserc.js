@@ -17,8 +17,7 @@ module.exports = {
       },
     },
     upload: {
-      target: 'filesystem',
-      outputDir: 'lighthouse',
+      target: 'temporary-public-storage',
     },
   },
 }
