@@ -17,7 +17,8 @@ module.exports = {
       },
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: 'lhci',
+      serverBaseUrl: 'http://162.55.172.20:9001/',
     },
   },
 }
