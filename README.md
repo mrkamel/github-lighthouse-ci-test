@@ -2,6 +2,8 @@
 
 > My cat&#39;s pajamas Nuxt.js project
 
+This is a test repository to try out lighthouse-ci and lighthouse-ci server.
+
 ## Build Setup
 
 ``` bash
